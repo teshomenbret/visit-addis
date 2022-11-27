@@ -1,0 +1,42 @@
+.restaurant-grid-gap{
+    display: grid;
+    margin: 5% 17%;
+    grid-template-columns: 1fr;
+    gap:50px;
+   
+}
+.restaurants-intro{
+    text-align: center;
+}
+.restaurants-intro h1{
+    font-size: 4em;
+    color: #092df8;
+}
+
+.restaurants-intro img{
+    width: 100%;
+    height: auto;
+}
+
+
+@media only screen and (max-width: 600px){
+    .restaurant-grid-gap{
+        display: grid;
+        margin:0;
+        grid-template-columns: 1fr;
+        gap:20px
+       
+    }
+    .restaurants-intro h1{
+        font-size: 2em;
+        
+    }
+
+}
+@media only screen and (max-width: 1000px){
+    .restaurant-grid-gap{
+        margin: 5% 10%;;
+    }
+
+}
+

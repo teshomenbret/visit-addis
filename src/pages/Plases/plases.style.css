@@ -1,0 +1,26 @@
+.place-grid-gap{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    row-gap: 50px;
+}
+
+.places-intro{
+    text-align: center;
+}
+
+.places-intro img{
+    width: 100%;
+    height: auto;
+}
+.places-intro h1{
+    font-size: 4em;
+    color: #092df8;
+}
+
+@media only screen and (max-width: 600px) {
+    .places-intro h1{
+        font-size: 2em;
+    }
+    
+}

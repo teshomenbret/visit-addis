@@ -1,0 +1,43 @@
+.hotel-grid-gap{
+    display: grid;
+    margin: 5% 15%;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:50px 50px;
+   
+}
+.hotels-intro{
+    text-align: center;
+}
+.hotels-intro h1{
+    font-size: 4em;
+    color: #092df8;
+}
+
+.hotels-intro img{
+    width: 100%;
+    height: auto;
+}
+
+@media only screen and (max-width: 600px){
+    .hotel-grid-gap{
+        display: grid;
+        margin: 0;
+        grid-template-columns: 1fr;
+        gap:20px;
+       
+    }
+
+    .hotels-intro h1{
+        font-size: 2em;
+    }
+
+}
+
+@media only screen and (max-width: 1000px){
+    .hotel-grid-gap{
+        margin: 2% 15%;
+        grid-template-columns: 1fr;
+        gap:20px;
+       
+    }
+}

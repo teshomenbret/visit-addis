@@ -1,0 +1,88 @@
+.home-intro{
+    position: relative;
+}
+.home-intro img{
+    width: 100%;
+}
+
+.addis{
+
+    position: absolute;
+    font-size: 5em;
+    color:blue;
+    top: 100px;
+    margin-left: 100px;
+}
+.addis strong{
+    color: red;
+    font-style:italic;
+}
+.destination{
+    position: absolute;
+    font-size: 4em;
+    color:blue;
+    bottom: 160px;
+    margin-left: 100px;
+
+}
+
+
+.intro-text{
+    align-items: center;
+    
+}
+
+.intro-text h1{
+    text-align: center;
+    font-size: 5em;
+    color: crimson;
+}
+.intro-text p{
+    text-align: center;
+    margin: 5px 30%;
+    font-size: large;
+}
+
+.box-nav{
+    display: grid;
+    grid-template-columns: 300px 300px;
+    grid-template-rows: 200px 200px;
+    margin: 100px 30%;
+    grid-gap: 5px;
+    align-items: center;
+     
+}
+.box-nav a{
+    text-align: center;
+    font-size: 2em;
+    background-color: #fad000; 
+    padding:70px 50px;
+    text-decoration: none;
+    list-style: none;
+    color: black;
+
+   
+}
+
+@media only screen and (max-width: 600px){
+    .box-nav{
+        display: grid;
+        grid-template-columns: 300px;
+        grid-template-rows: 200px 200px 200px;
+        margin: 30px 8%;
+       
+        /* grid-gap: 5px; */
+        align-items: center;
+    }
+
+    .intro-text p{
+        margin: 5px 10%;
+        text-align:left;
+
+    }
+
+    .intro-text h1{
+        font-size: 3em;
+    }
+}
+

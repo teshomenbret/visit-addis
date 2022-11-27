@@ -1,0 +1,107 @@
+
+.grid-restaurant-item{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas: 
+    "photo-area-restaurant-item info-area-restaurant-item"
+    "photo-area-restaurant-item detail-area-restaurant-item";
+    box-shadow: 0 0 10px 0 rgb(207, 198, 198);
+    gap:50px
+}
+.photo-area-restaurant-item{
+    grid-area: photo-area-restaurant-item;
+    
+ 
+}
+.photo-area-restaurant-item img{
+    width: 100%;
+    height: 100%;
+}
+
+.info-area-restaurant-item{
+    grid-area:info-area-restaurant-item ;
+    padding: 2% 5% 2% 5%;
+}
+.info-area-restaurant-item h2{
+    color: crimson;
+}
+.detail-area-restaurant-item{
+    grid-area: detail-area-restaurant-item;
+    
+}
+
+.detail-area-restaurant-item p {
+    font-size: large;
+  
+}
+.info-area-restaurant-item a{
+    list-style: none;
+    text-decoration: none;
+    color: black;
+    background-color: #fad000;
+    padding: 4px;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+
+    .grid-restaurant-item{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 200px auto auto;
+        grid-template-areas: 
+        "photo-area-restaurant-item"
+        "info-area-restaurant-item" 
+        "detail-area-restaurant-item";
+
+    }
+
+    .info-area-restaurant-item{
+        padding:0 2%;
+    }
+    .detail-area-restaurant-item{
+        grid-area: detail-area-restaurant-item;
+        margin: 0;
+        padding: 2%;
+        
+    }
+    
+    .detail-area-restaurant-item p {
+        font-size: large;
+     
+      
+    }
+    
+    
+
+  }
+  @media only screen and (max-width: 1000px) {
+    .grid-restaurant-item{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows:auto auto auto;
+        grid-template-areas: 
+        "photo-area-restaurant-item"
+        "info-area-restaurant-item" 
+        "detail-area-restaurant-item";
+
+    }
+     .info-area-restaurant-item{
+        padding:0 2%;
+    }
+    .detail-area-restaurant-item{
+        grid-area: detail-area-restaurant-item;
+        margin: 0;
+        padding: 2%;
+        
+    }
+    
+    .detail-area-restaurant-item p {
+        font-size: large;
+    
+    }
+  }
+ 
+

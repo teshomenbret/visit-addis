@@ -1,0 +1,43 @@
+.grid-hotel-item{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 250px 200px 100px;
+    grid-template-areas: 
+    "photo-area-hotel-item"
+    "info-area-hotel-item" 
+    "detail-area-hotel-item";
+    box-shadow: 0 0 10px 0 rgb(207, 198, 198);
+}
+.photo-area-hotel-item{
+    grid-area: photo-area-hotel-item;
+    
+ 
+}
+.photo-area-hotel-item img{
+    width: 100%;
+    height: 100%;
+}
+
+.info-area-hotel-item{
+    grid-area:info-area-hotel-item ;
+    padding: 2% 5% 2% 5%;
+    /* box-shadow: 0 0 1px 0 rgb(207, 198, 198);   */
+}
+.info-area-hotel-item h2{
+    color: crimson;
+}
+.detail-area-hotel-item{
+    grid-area: detail-area-hotel-item;
+    padding: 2%;
+    text-align: center;
+    vertical-align:middle;
+   
+}
+.detail-area-hotel-item a{
+    padding:10px 50px;
+    /* margin: 50px; */
+    background-color: crimson;
+    color: white;
+    text-decoration: none;
+    font-size: larger;
+}

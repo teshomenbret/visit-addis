@@ -1,0 +1,20 @@
+.getting-intro img{
+    width: 100%;
+    height: auto;
+}
+.getting-grid-gap{
+    padding: 5% 20%;
+}
+
+.getting-grid-gap h1{
+    color: crimson;
+}
+.getting-grid-gap h2{
+    color: crimson;
+}
+.getting-grid-gap div{
+    margin-top: 50px;
+}
+.pad{
+    padding-left: 20px;
+}

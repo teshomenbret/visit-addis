@@ -1,17 +1,52 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import Home from './pages/Home/home.pages'
+import Plases from './pages/Plases/plases.component';
+import Hotels from './pages/Hotels/hotels.component';
+import Restaurants from './pages/FoodAndDrink/foodAndDirnk.component';
+import GettingHere from './pages/GettingHere/gettingHere.component'
+import ErrorPage from "./error-page";
+import Grid from './grid';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from "react-router-dom";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Grid/>,
+    errorElement: <ErrorPage />,
+    children: [
+      {
+        path: "",
+        element: <Home />,
+      },
+      {
+        path: "attraction",
+        element: <Plases />,
+      },
+      {
+        path: "stay",
+        element: <Hotels/>,
+      },
+      {
+        path: "food",
+        element: <Restaurants/>,
+      },
+      {
+        path: "getting-here",
+        element: <GettingHere/>,
+      },
+    ],
+  },
+
+]);
+
+
+ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <App />
+    <RouterProvider router={router} />
   </React.StrictMode>
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
